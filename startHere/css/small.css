@@ -1,0 +1,210 @@
+/* === BASE STYLES (apply to all screen sizes) === */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Arimo", sans-serif;
+  scroll-behavior: smooth;
+}
+
+section#about,
+section#projects,
+section#contact {
+  scroll-margin-top: 40px;
+}
+
+:root {
+  --lightWeight: 400;
+  --heavyWeight: 700;
+  --primaryColor: #96725a;
+  --secondaryColor: #dcb1ab;
+  --tertiaryColor: #ece0d1;
+  --accentColor: #634832;
+  --fontColor: #38220f;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--accentColor);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  padding: 0.8rem 0.5rem;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: var(--heavyWeight);
+}
+
+nav a:hover {
+  background-color: var(--accentColor);
+  color: white;
+}
+
+section#about {
+  background-color: var(--tertiaryColor);
+  height: 100vh;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section#about h1,
+section#projects h1,
+section#contact h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--fontColor);
+}
+
+section#about h2,
+section#contact h2 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: var(--lightWeight);
+  color: var(--fontColor);
+}
+
+section#projects {
+  background-color: var(--primaryColor);
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.theParent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.theParent a {
+  flex-basis: 100%;
+  padding: 1rem 2vw;
+}
+
+section#projects figure {
+  margin: 0;
+  width: 100%;
+}
+
+section#projects a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+section#projects a:hover {
+  text-decoration: underline;
+  transform: translateY(5px);
+}
+
+section#projects img {
+  width: 100%;
+  height: auto;
+}
+
+section#contact {
+  background-color: var(--tertiaryColor);
+  min-height: 85vh;
+  padding: 2.5rem 1rem 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section#contact h1,
+section#contact h2 {
+  text-align: center;
+  width: 100%;
+}
+
+section#contact ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+section#contact li {
+  list-style: none;
+}
+
+section#contact a {
+  text-align: center;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s ease-in-out;
+}
+
+section#contact a:hover {
+  text-decoration: underline;
+  transform: translateY(5px);
+}
+
+section#contact a img {
+  height: 28px;
+  width: auto;
+  margin-bottom: 0.3rem;
+}
+
+footer {
+  background-color: var(--tertiaryColor);
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p,
+footer span {
+  font-size: 1rem;
+  color: var(--accentColor);
+  margin: 0;
+}
+
+/* center figcaption, make colors look good and coherant
+
+
+
+
+
+
+
+
+
+
+
+*/

@@ -1,0 +1,58 @@
+/* medium.css */
+@media only screen and (min-width: 35rem) {
+  section#about h1,
+  section#projects h1,
+  section#contact h1 {
+    font-size: 3.5rem;
+  }
+
+  section#about,
+  section#projects,
+  section#contact {
+    scroll-margin-top: 40px;
+  }
+
+  section#about h2,
+  section#contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .theParent a {
+    flex-basis: 50%;
+  }
+
+  section#contact ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  section#contact li {
+    margin-bottom: 0;
+  }
+
+  section#contact a {
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  section#contact a img {
+    height: 35px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* end media query
+
+
+
+
+
+  section#contact a img {
+    height: 35px;
+    margin-bottom: 0.5rem;
+  }
+
+*/

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jake Seegmiller Portfolio</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section id="about">
+          <h1>Jake Seegmiller</h1>
+          <h2>User Experience Designer</h2>
+        </section>
+
+        <section id="projects">
+  <h1>My Work</h1>
+  <div class="theParent">
+    <a href="#" target="_blank">
+      <figure>
+        <img src="imgs/icon_22.webp" alt="Project 1 Icon" />
+        <figcaption>Project 1 Description</figcaption>
+      </figure>
+    </a>
+    <a href="#" target="_blank">
+      <figure>
+        <img src="imgs/icon_22.webp" alt="Project 2 Icon" />
+        <figcaption>Project 2 Description</figcaption>
+      </figure>
+    </a>
+    <a href="#" target="_blank">
+      <figure>
+        <img src="imgs/icon_22.webp" alt="Project 3 Icon" />
+        <figcaption>Project 3 Description</figcaption>
+      </figure>
+    </a>
+    <a href="#" target="_blank">
+      <figure>
+        <img src="imgs/icon_22.webp" alt="Project 4 Icon" />
+        <figcaption>Project 4 Description</figcaption>
+      </figure>
+    </a>
+    <a href="#" target="_blank">
+      <figure>
+        <img src="imgs/icon_22.webp" alt="Project 5 Icon" />
+        <figcaption>Project 5 Description</figcaption>
+      </figure>
+    </a>
+    <a href="#" target="_blank">
+      <figure>
+        <img src="imgs/icon_22.webp" alt="Project 6 Icon" />
+        <figcaption>Project 6 Description</figcaption>
+      </figure>
+    </a>
+  </div>
+</section>
+
+
+        <section id="contact">
+          <h1>Contact Info</h1>
+          <h2>Reach out, I'm super cool</h2>
+          <ul>
+            <li><a href="#"><img src="svgIcons/facebook.svg" alt="Facebook" />Facebook</a></li>
+            <li><a href="#"><img src="svgIcons/github.svg" alt="GitHub" />GitHub</a></li>
+            <li><a href="#"><img src="svgIcons/instagram.svg" alt="Instagram" />Instagram</a></li>
+            <li><a href="#"><img src="svgIcons/linked-in.svg" alt="LinkedIn" />LinkedIn</a></li>
+            <li><a href="#"><img src="svgIcons/twitter.svg" alt="Twitter" />Twitter</a></li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; Jake Seegmiller <span id="theYear">xxxx</span></p>
+      </footer>
+    </div>
+
+    <script>
+      const year = new Date().getFullYear();
+      document.getElementById("theYear").textContent = year;
+    </script>
+  </body>
+</html>
+
